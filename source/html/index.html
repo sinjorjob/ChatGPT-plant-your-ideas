@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Primary Meta Tags -->
+    <title>Plant Your Ideas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="Volt - Free Bootstrap 5 Dashboard">
+    <meta name="author" content="Themesberg">
+    <meta name="description"
+        content="Volt Pro is a Premium Bootstrap 5 Admin Dashboard featuring over 800 components, 10+ plugins and 20 example pages using Vanilla JS.">
+    <meta name="keywords"
+        content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, themesberg, themesberg dashboard, themesberg admin dashboard" />
+    <link rel="canonical" href="https://themesberg.com/product/admin-dashboard/volt-premium-bootstrap-5-dashboard">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://demo.themesberg.com/volt-pro">
+    <meta property="og:title" content="Volt - Free Bootstrap 5 Dashboard">
+    <meta property="og:description"
+        content="Volt Pro is a Premium Bootstrap 5 Admin Dashboard featuring over 800 components, 10+ plugins and 20 example pages using Vanilla JS.">
+    <meta property="og:image"
+        content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-pro-bootstrap-5-dashboard/volt-pro-preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://demo.themesberg.com/volt-pro">
+    <meta property="twitter:title" content="Volt - Free Bootstrap 5 Dashboard">
+    <meta property="twitter:description"
+        content="Volt Pro is a Premium Bootstrap 5 Admin Dashboard featuring over 800 components, 10+ plugins and 20 example pages using Vanilla JS.">
+    <meta property="twitter:image"
+        content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-pro-bootstrap-5-dashboard/volt-pro-preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Sweet Alert -->
+    <link type="text/css" href="./vendor/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <!-- Notyf -->
+    <link type="text/css" href="./vendor/notyf/notyf.min.css" rel="stylesheet">
+
+    <!-- Volt CSS -->
+    <link type="text/css" href="./css/volt.css" rel="stylesheet">
+    <!-- Loading CSS -->
+    <link href="./css/loading_style.css" rel="stylesheet">
+       <!-- common style  CSS -->
+       <link href="./css/style.css" rel="stylesheet">
+    <!-- plantuml -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/plantuml-encoder@1.4.0/dist/plantuml-encoder.min.js"></script>
+    <!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
+    <!-- loading start -->
+    <div id="overlay" class="loading" style="display: none;">
+        <div class="spinner-wrapper">
+            <span class="spinner-text">Creating image ... </span>
+            <span class="spinner"></span>
+        </div>
+    </div>
+    <!-- loading end -->
+
+    <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
+        <a class="navbar-brand me-lg-5" href="./index.html">
+            <img class="navbar-brand-dark" src="./assets/img/brand/light.svg" alt="Volt logo" /> <img
+                class="navbar-brand-light" src="./assets/img/brand/dark.svg" alt="Volt logo" />
+        </a>
+        <div class="d-flex align-items-center">
+            <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <nav id="sidebarMenu" class="sidebar d-lg-block bg-gray-800 text-white collapse" data-simplebar>
+        <div class="sidebar-inner px-4 pt-3">
+            <ul class="nav flex-column pt-3 pt-md-0">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link d-flex align-items-center">
+                        <span class="sidebar-icon">
+                            <img src="./assets/img/brand/light.svg" height="20" width="20" alt="Volt Logo">
+                        </span>
+                        <span class="mt-1 ms-1 sidebar-text">Plant Your Ideas</span>
+                    </a>
+                </li>
+                <li class="nav-item  active ">
+                    <a href="./index.html" class="nav-link">
+                        <span class="sidebar-icon">
+                            <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                                <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+                            </svg>
+                        </span>
+                        <span class="sidebar-text">Dashboard</span>
+                    </a>
+                </li>
+
+
+                <li class="nav-item ">
+                    <a href="./settings.html" class="nav-link">
+                        <span class="sidebar-icon">
+                            <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                        <span class="sidebar-text">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        <div class="py-4">
+            <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
+                <ol class="breadcrumb breadcrumb-dark breadcrumb-transparent">
+                    <li class="breadcrumb-item">
+                        <a href="./index.html">
+                            <svg class="icon icon-xxs" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+
+                </ol>
+            </nav>
+            <div class="d-flex justify-content-between w-100 flex-wrap">
+                <div class="mb-3 mb-lg-0">
+                    <h1 class="h4">Plant Your Ideas</h1>
+                    <p class="mb-0">PlantUMLマインドマップで手軽にアイデアを可視化</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- イメージ図 -->
+        <div class="row">
+            <div class="col-12 col-xl-12">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <div class="card border-0 shadow">
+                            <div class="card-header">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <label for="textarea">マインドマップ作成例</label>
+                            <textarea class="form-control" placeholder="ここに文章を入力..."
+                             readonly rows="5">少子化問題について次の条件で要素を洗い出してください。
+# 条件
+・中心に「少子化」を配置
+・少子化問題に最も関連性が強い3つのサブトピックを配置</textarea>
+                            <div class="icon-container">
+                                <i class="fas fa-arrow-alt-circle-down icon"></i>
+                            </div>
+                            <img src="img/mindmap.png" alt="Image description" style="width: 350px; height: 350px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- イメージ図 end -->
+        
+        <div class="row">
+            <div class="col-12 col-xl-12">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <div class="card border-0 shadow">
+                            <div class="card-header">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <div class="mb-2">
+                                            <label class="my-1 me-2" for="state">出力言語の選択:</label>
+                                            <select id="language" class="w-30" name="language">
+                                                <option value="AL">Japanese</option>
+                                                <option value="AK">English</option>
+                                            </select>
+                                        </div>
+                                        <form>
+                                            <label for="textarea">可視化したいアイデアを入力してください。</label>
+                                            <textarea class="form-control" placeholder="ここに文章を入力..." id="inquiry"
+                                                cols="15" rows="10"></textarea>
+                                            <br>
+                                            <div class="col text-end">
+                                                <input class="btn btn-sm btn btn-info" type="button" value="生成する" data-bs-toggle="tooltip" data-bs-placement="left" title="マインドマップを生成します"
+                                                    onclick="chat_gpt()">
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- prompt sample -->
+        <div class="row">
+            <div class="col-12 col-xl-12">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <div class="card border-0 shadow">
+                            <div class="card-header">
+                                <div class="row align-items-center">
+                                    <div class="col">
+
+                                        <!-- button0 start -->
+                                       <button type="button" class="btn btn-block btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modal-default0">サンプル1</button>
+                                       <div class="modal fade" id="modal-default0" tabindex="-1" role="dialog" aria-labelledby="modal-default0" aria-hidden="true">
+                                           <div class="modal-dialog modal-dialog-centered" role="document">
+                                               <div class="modal-content">
+                                                   <div class="modal-header">
+                                                       <h2 class="h6 modal-title"><b>Oracle障害原因調査と再発防止策</b></h2>
+                                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                   </div>
+                                                   <div class="modal-body">
+                                                       <p>以下の前提条件でOracleシステムを運用しています。<br>
+                                                        Oracleインスタンスのシャットダウンがタイムアウトになってしまう障害が発生しました。<br>
+                                                        この問題の考えられる原因と再発防止策についてまとめてください。<br>
+                                                        
+                                                        <b># 前提条件</b><br>
+                                                        Oracleインスタンスのシャットダウンはshutdown immediatelyコマンドを使っています。</p>
+                                                   </div>
+                                                   <div class="modal-footer">
+                                                       <button type="button" class="btn btn-link text-gray ms-auto" data-bs-dismiss="modal">Close</button>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <!-- button0 end -->
+
+                                        <!-- button1 start -->
+                                        <button type="button" class="btn btn-block btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modal-default">サンプル2</button>
+                                        <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h2 class="h6 modal-title"><b>少子化問題について関連ワードを調べる</b></h2>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>少子化問題について次の条件で要素を洗い出してください。<br>
+                                                           <b># 条件</b><br>
+                                                           ・中心に「少子化」を配置<br>
+                                                           ・少子化問題に最も関連性が強い3つのサブトピックを配置</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-link text-gray ms-auto" data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- button1 end -->
+                                        <!-- button2 start -->
+                                        <button type="button" class="btn btn-block btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modal-default2">サンプル3</button>
+                                        <div class="modal fade" id="modal-default2" tabindex="-1" role="dialog" aria-labelledby="modal-default2" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h2 class="h6 modal-title"><b>ChatGPTの活用報について調べる</b></h2>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>以下の条件に従い、 ChatGPTの活用方法についてアイデアを出してください。<br>
+
+                                                            <b>【説明】</b> 昨今ChatGPTの活用が盛んになっています。自社でも業務効率化のためにChatGPTの利活用を検討する必要があります。<br>
+                                                            しかし、ChatGPTについてまだあまり知らないためどのようなことに利用できるのか理解できていません。<br>
+                                                            そのため、自社業務の業務効率化のためどのような活用方法があるかアイデアを提供してほしいです。<br>
+                                                            
+                                                            <b>【前提条件】</b>自社はシステム運用保守をメインとするITシステム会社です。<br>
+                                                            
+                                                            <b>【出力】</b>3つのサブトピックを配置し、各サブトピックについて関連する要素を最低３つ以上抽出してください。<br>
+                                                            
+                                                            </p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-link text-gray ms-auto" data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- button2 end -->
+                                        <!-- button3 start -->
+                                        <button type="button" class="btn btn-block btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modal-default3">サンプル4</button>
+                                        <div class="modal fade" id="modal-default3" tabindex="-1" role="dialog" aria-labelledby="modal-default3" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h2 class="h6 modal-title"><b>作業品質向上についての案だし</b></h2>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p><b>【質問文】</b>以下に記載してあるとおり、システム運用保守作業の品質を向上させる必要性に迫られています。<br>
+                                                            どのような要素に注意しながら対応を進めればよいかアイデアをください。<br>
+                                                            
+                                                            <b>【役割】</b>私はシステム運用保守を担当するグループのリーダーです。<br>
+                                                            <b>【背景】</b>最近、保守担当による作業ミスが多発しシステム品質の低下が課題となっている。<br>
+                                                            <b>【条件】</b>追加コストをかけずにグループメンバー内の作業ミスの再発を防止する必要がある。<br>
+                                                            <b>【目的】</b>システム運用保守の作業ミスを削減すること。<br>
+                                                            <b>【キーワード】</b>自動化、ダブルチェック、事前のレビュー、手順書整備<br>
+                                                            <b>【出力】</b>中心に「作業品質向上」を配置し、それに対して3つのサブトピックを配置し、各サブトピックについて関連する要素を最低３つ以上抽出してください。</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-link text-gray ms-auto" data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- button3 end -->
+
+                                        <!-- button4 start -->
+                                        <button type="button" class="btn btn-block btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modal-default4">サンプル4</button>
+                                        <div class="modal fade" id="modal-default4" tabindex="-1" role="dialog" aria-labelledby="modal-default4" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h2 class="h6 modal-title"><b>キーワードの分析例</b></h2>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>次の条件に基づいて、キーワードを分析して洗い出してください。<br>
+                                                            <b>#Keyword</b>
+                                                            [ここにキーワードを入力<br>
+                                                            
+                                                            変数n=5<br>
+                                                            <b>#処理内容</b><br>
+                                                            1.関連する物をn個書き出し<br>
+                                                            2.関連する機能や性質、特徴をn個書き出し<br>
+                                                            3.keywordを構成している要素をn個書き出し<br>
+                                                            4.人々はkeywordに対してどのような印象や認識をしているか、n個書き出し<br>
+                                                            5.keywordを抽象化し、どのカテゴリに属するかn個書き出し<br>
+                                                            6.過去、どのような物であり、現在のイメージから未来に起きるであろう変化を予測し書き出してください<br></p>  
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-link text-gray ms-auto" data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- button3 end -->    
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- prompt sample end-->
+        <div id="response" class="row">
+            <div class="col-12 col-xl-12">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <div class="card border-0 shadow">
+                            <div class="card-header">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <textarea class="form-control" style="tab-size : 4;" id="editor" rows="8"
+                                            cols="80%"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="mindmap" class="row" style="display: none;">
+            <div class="col-12 col-xl-12">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <div class="card border-0 shadow">
+                            <div class="card-header">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <figure>
+                                            <img id="view"></img>
+                                            <a class="btn btn-sm btn-warning" id="download-button" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="html形式でダウンロード"
+                                                onclick="download_map()">Download as HTML</a>
+                                        </figure>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- Alert用モーダル -->
+        <div id="alert-modal" class="modal">
+            <div class="alert-modal-content">
+              <div class="alert-modal-header">
+                
+                <h2 class="alert-modal-title"><i class="fas fa-exclamation-triangle"></i>　エラー内容</h2>
+                <button class="alert-modal-close-btn">&times;</button>
+              </div>
+              <div class="alert-modal-body">
+                <p id="alert-modal-message" style="text-align: left;"></p>
+              </div>
+            </div>
+          </div>
+        <!-- Alert用モーダル end -->
+    </main>
+    <script type="text/javascript" src="eel.js"></script>
+
+    <script type="text/javascript" src="./js/index.js"></script>
+
+    <script type="text/javascript" src="./js/draw_mindmap.js"></script>    
+
+    <!-- Core -->
+    <script src="./vendor/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Vendor JS -->
+    <script src="./vendor/onscreen/dist/on-screen.umd.min.js"></script>
+
+    <!-- Slider -->
+    <script src="./vendor/nouislider/distribute/nouislider.min.js"></script>
+
+    <!-- Smooth scroll -->
+    <script src="./vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Charts -->
+    <script src="./vendor/chartist/dist/chartist.min.js"></script>
+    <script src="./vendor/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+
+    <!-- Datepicker -->
+    <script src="./vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
+
+    <!-- Sweet Alerts 2 -->
+    <script src="./vendor/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+    <!-- Moment JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+
+    <!-- Vanilla JS Datepicker -->
+    <script src="./vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
+
+    <!-- Notyf -->
+    <script src="./vendor/notyf/notyf.min.js"></script>
+
+    <!-- Simplebar -->
+    <script src="./vendor/simplebar/dist/simplebar.min.js"></script>
+
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- Volt JS -->
+    <script src="./assets/js/volt.js"></script>
+
+
+</body>
+
+</html>
